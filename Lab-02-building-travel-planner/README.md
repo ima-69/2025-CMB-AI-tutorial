@@ -68,7 +68,18 @@ cd o2-business-apis/search-api
 bal run
 ```
 
-### 2. Start the AI Agent (BFF)
+### 2. Start the Weather MCP Server
+
+Before starting the AI Agent, you need to set up the Weather MCP server.
+
+1. Clone the repository:
+```bash
+git clone https://github.com/xlight05/mcp-openweathermap.git
+```
+
+2. Follow the setup guide in the repository's README to start the MCP server.
+
+### 3. Start the AI Agent (BFF)
 
 The main agent acts as the Backend-for-Frontend and coordinates with all business APIs:
 
@@ -81,7 +92,7 @@ bal run
 
 The agent will be available at: `http://localhost:9090` (default Ballerina AI listener port)
 
-### 3. Start the Frontend
+### 4. Start the Frontend
 
 Prerequisite: 
 
